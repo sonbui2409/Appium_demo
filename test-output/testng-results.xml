@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14952" started-at="2021-09-16T21:06:07 ICT" finished-at="2021-09-16T21:06:22 ICT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14952" started-at="2021-09-16T21:06:07 ICT" finished-at="2021-09-16T21:06:22 ICT">
+      <class name="Mobile_openApp.demo_Open_app">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Mobile_openApp.demo_Open_app@4b553d26]" name="setUp" is-config="true" duration-ms="14913" started-at="2021-09-16T21:06:07 ICT" finished-at="2021-09-16T21:06:22 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="OpenApp()[pri:0, instance:Mobile_openApp.demo_Open_app@4b553d26]" name="OpenApp" duration-ms="5" started-at="2021-09-16T21:06:22 ICT" finished-at="2021-09-16T21:06:22 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenApp -->
+      </class> <!-- Mobile_openApp.demo_Open_app -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
