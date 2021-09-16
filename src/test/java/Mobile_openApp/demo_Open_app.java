@@ -50,8 +50,7 @@ public class demo_Open_app {
 	@Test
 	public void OpenApp() {
 		System.out.println("Open Calculator App");
-		
-		
+	
 	}
 	
 	
