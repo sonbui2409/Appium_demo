@@ -3,8 +3,10 @@ package Mobile_openApp;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -48,8 +50,16 @@ public class demo_Open_app {
 	
 	
 	@Test
-	public void OpenApp() {
-		System.out.println("Open Calculator App");
+	public void makeSomeCalc() {
+		driver.findElement(By.id("com.google.android.calculator:id/digit_1")).click();
+		driver.findElement(By.id("com.google.android.calculator:id/digit_0")).click();
+		driver.findElement(By.id("com.google.android.calculator:id/op_mul")).click();
+		driver.findElement(By.id("com.google.android.calculator:id/digit_2")).click();
+		driver.findElement(By.id("com.google.android.calculator:id/eq")).click();
+		WebElement result = driver.findElement(By.id("com.google.android.calculator:id/result_final"));
+		Assert.assertEquals("20", result.getText());
+		
+		System.out.println("Test Case is Passed");
 	
 	}
 	
