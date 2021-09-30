@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17593" started-at="2021-09-17T17:43:49 ICT" finished-at="2021-09-17T17:44:06 ICT">
+  <suite name="Default suite" duration-ms="149663" started-at="2021-09-30T22:32:41 ICT" finished-at="2021-09-30T22:35:11 ICT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17593" started-at="2021-09-17T17:43:49 ICT" finished-at="2021-09-17T17:44:06 ICT">
-      <class name="Mobile_openApp.demo_Open_app">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Mobile_openApp.demo_Open_app@4b553d26]" name="setUp" is-config="true" duration-ms="12864" started-at="2021-09-17T17:43:49 ICT" finished-at="2021-09-17T17:44:02 ICT">
+    <test name="Default test" duration-ms="149663" started-at="2021-09-30T22:32:41 ICT" finished-at="2021-09-30T22:35:11 ICT">
+      <class name="Mobile_Appium.demo_Open_app">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Mobile_Appium.demo_Open_app@63440df3]" name="setUp" is-config="true" duration-ms="16874" started-at="2021-09-30T22:32:41 ICT" finished-at="2021-09-30T22:32:58 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="makeSomeCalc()[pri:0, instance:Mobile_openApp.demo_Open_app@4b553d26]" name="makeSomeCalc" duration-ms="4690" started-at="2021-09-17T17:44:02 ICT" finished-at="2021-09-17T17:44:06 ICT">
+        <test-method status="PASS" signature="Demo_scroll()[pri:1, instance:Mobile_Appium.demo_Open_app@63440df3]" name="Demo_scroll" duration-ms="132761" started-at="2021-09-30T22:32:58 ICT" finished-at="2021-09-30T22:35:11 ICT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- makeSomeCalc -->
-      </class> <!-- Mobile_openApp.demo_Open_app -->
+        </test-method> <!-- Demo_scroll -->
+      </class> <!-- Mobile_Appium.demo_Open_app -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
