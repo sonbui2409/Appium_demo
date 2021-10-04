@@ -5,8 +5,10 @@
     <classes>
       <class name="Mobile_Appium.demo_Open_app">
         <methods>
-          <include name="setUp"/>
+          <include name="driver_open"/>
           <include name="Demo_scroll"/>
+          <include name="driver_quit"/>
+          <include name="getResult"/>
         </methods>
       </class> <!-- Mobile_Appium.demo_Open_app -->
     </classes>
