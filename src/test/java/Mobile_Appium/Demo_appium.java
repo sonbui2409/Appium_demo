@@ -9,15 +9,16 @@ import AppiumBaseCommon.BaseTest;
 import AppiumObject.VnExpressObject;
 
 
-public class demo_Open_app extends BaseTest {
+public class Demo_appium extends BaseTest {
 	
 	//AppiumDriver<WebElement> driver;
 	//DesiredCapabilities caps; //env configuration
-	VnExpressObject vn = new VnExpressObject(driver, log);
+	VnExpressObject vn;
 
 	@Test (priority = 1)
 	public void Demo_scroll() {
 		log = report.createTest("Scroll to Element");	
+		vn = new VnExpressObject(driver, log);
 		vn.ClickByPass();
 		vn.ScrollToPost("DOWN", "Khám");
 		vn.ClickToTitle("Khám");

@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite_demo" verbose="1">
+	<test name="Demo_Appium">
+		<!-- input parameter to input value of browser if_else -->
+		<!-- <parameter name="browser" value="Chrome" />
+		<parameter name="filename" value="Data.xlsx" /> -->
+		<classes>
+			<!-- input name of class that will be executed -->
+			<!-- <class name="ExercisemvnTestcase.Testcase_login" />
+			<class name="ExercisemvnTestcase.Testcase_Items" /> -->
+			<class name="Mobile_Appium.Demo_appium" />
+
+		</classes>
+	</test>
+	<!-- <test name="Demo_Firefox" > input parameter to input value of browser 
+		if_else <parameter name="browser" value="Firefox"/> <classes> input name 
+		of class that will be executed <class name="ExercisemvnTestcase.Testcase_login" 
+		/> <class name="ExercisemvnTestcase.Testcase_Inventory" /> </classes> </test> -->
+</suite>

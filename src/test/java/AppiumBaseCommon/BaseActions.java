@@ -91,12 +91,12 @@ public class BaseActions {
 	//Click
 	protected void ClickXpath(String xpath) {
 		WebElement field = driver.findElement(By.xpath(xpath));
-		log.info("Click to " + get_EleDescription(field));
+		//log.info("Click to " + get_EleDescription(field));
 		field.click();
 	}
 	protected void ClickId(String id) {
 		WebElement field = driver.findElement(By.id(id));
-		log.info("Click to " + get_EleDescription(field));
+		//log.info("Click to " + get_EleDescription(field));
 		field.click();
 		
 	}

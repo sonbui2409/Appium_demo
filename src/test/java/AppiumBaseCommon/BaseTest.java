@@ -37,6 +37,8 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -133,9 +135,14 @@ public class BaseTest {
 		
 		caps.setCapability("appPackage", "fr.playsoft.vnexpress");
 		caps.setCapability("appActivity", "fr.playsoft.vnexpress.ActivityMain");
-		
+		//code start appium server
+				AppiumDriverLocalService service = AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
+						.usingPort(4755));	
+				service.start();   //start appium
+				
+				String newUrl= service.getUrl().toString();			
 		try {
-			driver = new AppiumDriver<WebElement>(new URL("http://0.0.0.0:4723/wd/hub"),caps);
+			driver = new AppiumDriver<WebElement>(new URL(newUrl),caps);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			//e.printStackTrace();

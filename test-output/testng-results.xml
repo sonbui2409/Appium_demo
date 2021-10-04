@@ -2,22 +2,54 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19897" started-at="2021-10-04T20:31:45 ICT" finished-at="2021-10-04T20:32:05 ICT">
+  <suite name="Suite_demo" duration-ms="235055" started-at="2021-10-04T22:00:27 ICT" finished-at="2021-10-04T22:04:22 ICT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19897" started-at="2021-10-04T20:31:45 ICT" finished-at="2021-10-04T20:32:05 ICT">
-      <class name="Mobile_Appium.demo_Open_app">
-        <test-method status="PASS" signature="driver_open()[pri:0, instance:Mobile_Appium.demo_Open_app@37d31475]" name="driver_open" is-config="true" duration-ms="18903" started-at="2021-10-04T20:31:45 ICT" finished-at="2021-10-04T20:32:04 ICT">
+    <test name="Demo_Appium" duration-ms="235055" started-at="2021-10-04T22:00:27 ICT" finished-at="2021-10-04T22:04:22 ICT">
+      <class name="Mobile_Appium.Demo_appium">
+        <test-method status="PASS" signature="driver_open()[pri:0, instance:Mobile_Appium.Demo_appium@42f93a98]" name="driver_open" is-config="true" duration-ms="14299" started-at="2021-10-04T22:00:27 ICT" finished-at="2021-10-04T22:00:41 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driver_open -->
-        <test-method status="FAIL" signature="Demo_scroll()[pri:1, instance:Mobile_Appium.demo_Open_app@37d31475]" name="Demo_scroll" duration-ms="21" started-at="2021-10-04T20:32:04 ICT" finished-at="2021-10-04T20:32:04 ICT">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="FAIL" signature="Demo_scroll()[pri:1, instance:Mobile_Appium.Demo_appium@42f93a98]" name="Demo_scroll" duration-ms="219641" started-at="2021-10-04T22:00:41 ICT" finished-at="2021-10-04T22:04:21 ICT">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element 'By.xpath: //android.widget.TextView[contains(@text,'Khám')]' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-B9T8IP8', ip: '192.168.64.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {app: C:\Users\User\eclipse-works..., appActivity: fr.playsoft.vnexpress.Activ..., appPackage: fr.playsoft.vnexpress, automationName: Appium, databaseEnabled: false, desired: {app: C:\Users\User\eclipse-works..., appActivity: fr.playsoft.vnexpress.Activ..., appPackage: fr.playsoft.vnexpress, automationName: Appium, deviceName: Android Emulator, fullReset: true, newCommandTimeout: 500, noReset: false, platformName: android, platformVersion: 7.1, udid: emulator-5554}, deviceApiLevel: 25, deviceManufacturer: samsung, deviceModel: SM-G977N, deviceName: emulator-5554, deviceScreenDensity: 320, deviceScreenSize: 720x1280, deviceUDID: emulator-5554, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 500, noReset: false, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 7.1.2, statBarHeight: 48, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1232, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: b48882ed-7f7e-46a8-b3f3-a4eb547a7bce]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at AppiumBaseCommon.BaseActions.ClickId(BaseActions.java:98)
-at AppiumObject.VnExpressObject.ClickByPass(VnExpressObject.java:25)
-at Mobile_Appium.demo_Open_app.Demo_scroll(demo_Open_app.java:21)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element 'By.xpath: //android.widget.TextView[contains(@text,'Khám')]' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-B9T8IP8', ip: '192.168.64.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {app: C:\Users\User\eclipse-works..., appActivity: fr.playsoft.vnexpress.Activ..., appPackage: fr.playsoft.vnexpress, automationName: Appium, databaseEnabled: false, desired: {app: C:\Users\User\eclipse-works..., appActivity: fr.playsoft.vnexpress.Activ..., appPackage: fr.playsoft.vnexpress, automationName: Appium, deviceName: Android Emulator, fullReset: true, newCommandTimeout: 500, noReset: false, platformName: android, platformVersion: 7.1, udid: emulator-5554}, deviceApiLevel: 25, deviceManufacturer: samsung, deviceModel: SM-G977N, deviceName: emulator-5554, deviceScreenDensity: 320, deviceScreenSize: 720x1280, deviceUDID: emulator-5554, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 500, noReset: false, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 7.1.2, statBarHeight: 48, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1232, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: b48882ed-7f7e-46a8-b3f3-a4eb547a7bce
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at AppiumBaseCommon.BaseActions.ClickXpath(BaseActions.java:95)
+at AppiumObject.VnExpressObject.ClickToTitle(VnExpressObject.java:28)
+at Mobile_Appium.Demo_appium.Demo_scroll(Demo_appium.java:24)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -48,26 +80,26 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Demo_scroll -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Mobile_Appium.demo_Open_app@37d31475]" name="getResult" is-config="true" duration-ms="422" started-at="2021-10-04T20:32:04 ICT" finished-at="2021-10-04T20:32:05 ICT">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Mobile_Appium.Demo_appium@42f93a98]" name="getResult" is-config="true" duration-ms="771" started-at="2021-10-04T22:04:21 ICT" finished-at="2021-10-04T22:04:21 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Demo_scroll status=FAILURE method=demo_Open_app.Demo_scroll()[pri:1, instance:Mobile_Appium.demo_Open_app@37d31475] output={null}]]]>
+                <![CDATA[[TestResult name=Demo_scroll status=FAILURE method=Demo_appium.Demo_scroll()[pri:1, instance:Mobile_Appium.Demo_appium@42f93a98] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="driver_quit()[pri:0, instance:Mobile_Appium.demo_Open_app@37d31475]" name="driver_quit" is-config="true" duration-ms="474" started-at="2021-10-04T20:32:05 ICT" finished-at="2021-10-04T20:32:05 ICT">
+        <test-method status="PASS" signature="driver_quit()[pri:0, instance:Mobile_Appium.Demo_appium@42f93a98]" name="driver_quit" is-config="true" duration-ms="291" started-at="2021-10-04T22:04:21 ICT" finished-at="2021-10-04T22:04:22 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driver_quit -->
-      </class> <!-- Mobile_Appium.demo_Open_app -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Mobile_Appium.Demo_appium -->
+    </test> <!-- Demo_Appium -->
+  </suite> <!-- Suite_demo -->
 </testng-results>
